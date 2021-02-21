@@ -44,7 +44,6 @@ img {
 }
 
 /*  Navbar */
-
 .navbar {
   background-color:var(--primary-color);
   color: #fff;
@@ -70,7 +69,6 @@ img {
 }
 
 /* Showcase */
-
 .showcase {
   height: 400px;
   background-color:var(--primary-color);
@@ -87,7 +85,6 @@ img {
 }
 
 .showcase .grid {
-  /* зачем   overflow: visible; - читать ниже в .showcase-form. Это из-за высоты формы, которая вылазиет за границы своего контейнера*/
   overflow: visible;
   grid-template-columns: 55% 45%;
   gap: 30px;
@@ -98,11 +95,8 @@ img {
 }
 
 .showcase-form {
-  /* in order to use a top (on other) property we have to first state position to be relative(or absolute)*/
   position: relative;
-  /* pushing down our form for 60px: */
   top:60px;
-  /* такая высота больше, чем высота контейнера, где находится форма - появится прокрутка, поэтому это нужно исправить - мы добавили выше в .showcase .grid такое условие как {  overflow: visible;}, теперь формочка вылазиет за свой контейнер и нет прокрутки*/
   height: 350px;
   width: 400px;
   z-index: 100;
@@ -127,8 +121,6 @@ img {
   outline: none;
 }
 
-/* Делаем кривую линию вверх вместого ровной */
-
 .showcase::before, 
 .showcase::after {
   content: '';
@@ -152,7 +144,6 @@ img {
 
 .stats-heading {
   max-width: 500px;
-  /* WHY NOT WORKING MARGIN */
   margin: auto;
 }
 
@@ -166,7 +157,6 @@ img {
 }
 
 /* Cli */
-
 .cli .grid {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -178,13 +168,11 @@ img {
 }
 
 /* Cloud */
-
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
 }
 
 /* Languages */
-
 .languages .flex {
   flex-wrap: wrap;
 }
@@ -201,12 +189,10 @@ img {
 }
 
 .languages .card:hover {
-  /* MOVING UP IMG */
   transform: translateY(-15px);
 }
 
 /* Footer */
-
 .footer a {
   color: #fff;
   margin: 0 8px;
