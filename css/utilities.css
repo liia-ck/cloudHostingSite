@@ -1,8 +1,7 @@
-/* Utilities - classes that we use all around the website*/
+/* Utilities*/
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  /* in order to get the space out under the h1: */
   overflow: auto;
   padding: 0 40px;
 }
@@ -32,7 +31,6 @@
 }
 
 .btn:hover {
-  /* by default its 1 */
   transform: scale(0.98);
 }
 
